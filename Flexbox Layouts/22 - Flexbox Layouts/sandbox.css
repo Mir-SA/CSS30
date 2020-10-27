@@ -1,0 +1,76 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.layout1 main {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout1 article {
+    flex: 1 58%;
+    margin-right: 2%;
+}
+
+.layout2 header {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2 header nav {
+    flex: 1;
+    margin-left: 2%;
+}
+
+.layout2 main {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2 article {
+    flex: 1 56%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.layout2 aside.sidebar,
+.layout2 aside.sidenav {
+    flex: 1 20%;
+}
+
+.layout3 header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.layout3 header nav {
+    flex: 1;
+    margin-right: 2%;
+}
+
+.layout3 .articles {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout3 article {
+    flex: 1;
+    margin: 0;
+}
+
+.layout3 article:nth-child(2n) {
+    margin: 0 2%;
+}
+
+/* MediaQueries */
+
+@media screen and (max-width: 768px) {
+    main, article, aside, header, .logo, .sidenav, .sidebar, .articles {
+        display: block !important;
+        float: none !important;
+        width: 100% !important;
+        margin: 0 0 2% !important;
+    }
+}
